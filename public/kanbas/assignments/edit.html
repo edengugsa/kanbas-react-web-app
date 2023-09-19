@@ -1,0 +1,162 @@
+<!-- This is the Assignment editor AND all the navigation stuff on the left side -->
+<!-- Fix the navigation -->
+<table width="100%">
+  <tr>
+    <td valign="top">
+      <ul>
+        <li>
+          <a href="#">Northeastern</a>
+        </li>
+        <li>
+          <a href="/Kanbas/Account/Profile/screen.html">Account</a>
+        </li>
+        <li>
+          <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
+        </li>
+        <li>
+          <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+        </li>
+        <li>
+          <a href="#">Inbox</a>
+        </li>
+      </ul>
+    </td>
+    <td valign="top">
+      <ul>
+        <li>
+          <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+        </li>
+        <li>
+          <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+        </li>
+        <li>
+          <a href="/Kanbas/Courses/Piazza/screen.html">Piazza</a>
+        </li>
+        <li>
+          <a href="/Kanbas/Courses/Zoom/screen.html">Zoom</a>
+        </li>
+        <li>
+          <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+        </li>
+        <li>
+          <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
+        </li>
+      </ul>
+    </td>
+    <td valign="top">
+      <select>
+        <option>SpeedGrader</option>
+    </select>
+    
+    <hr>
+    <h3>Assignment Name</h3>
+    <form action="/Kanbas/Courses/Home">
+        <input value="A1 - ENV + HTML" />
+    
+        <br />
+        <textarea cols="50" rows="10">
+        This is the description of the assignment
+    </textarea>
+        <br />
+        <br />
+        <label for="points">Points</label>
+        <br />
+        <input id="points" max="100" min="50" step="5" type="number" value="100" />
+        <br />
+        <br />
+        Assignment Group
+        <br />
+        <select>
+            <option>ASSIGNMENTS</option>
+        </select>
+    
+        <br />
+        <br />
+        Display Grade as
+        <br />
+        <select>
+            <option>Percentage</option>
+        </select>
+    
+        <br />
+        <br />
+        Submission Type
+        <br />
+        <select>
+            <option>Online</option>
+        </select>
+        <br />
+        <br />
+    
+    
+        Online Entry Options
+        <br />
+        <input id="text-entry" type="checkbox" />
+        <label for="text-entry">Text Entry</label>
+        <br />
+        <label> <input type="checkbox" /> Website URL </label>
+        <br />
+        <input type="checkbox" /> Media Recording<br />
+        <input type="checkbox" /> Student Annotation<br />
+        <input type="checkbox" /> File Uploads
+    
+        <br />
+        <br />
+        Submission Attempts
+        <br />
+        <select>
+            <option>Unlimited</option>
+        </select>
+    
+        <br />
+        <br />
+        Plagiarism Review
+        <br />
+        <select>
+            <option>None</option>
+        </select>
+        <br />
+        <br />
+    
+        Group Assignment
+        <br />
+        <input type="checkbox" /> This is a group assignment
+        <br />
+        <br />
+    
+        Peer Reviews
+        <br />
+        <input type="checkbox" /> Require Peer Reviews
+        <br />
+        <br />
+    
+        Assign to
+        <br />
+        <input value="Everyone"/>
+        <br />
+        <br />
+    
+        Due
+        <br />
+        <input type="date" value="2023-09-21" min="2023-09-07" max="2023-09-28" />    <br />
+        <br />
+    
+        Available from 
+        <br />
+        <input type="date" value="2023-09-21" min="2023-09-07" max="2023-09-28" />    <br />
+        <br />
+    
+        Until
+        <br />
+        <input type="date" value="2023-09-21" min="2023-09-07" max="2023-09-28" />    <br />
+        <br />
+    
+        <button type="button"; onclick="window.location.href ='index.html'">Cancel</button>
+        <button type="button"; onclick="window.location.href ='index.html'">Save</button>
+    
+    
+    
+    </form>
+    </td>
+  </tr>
+</table>
