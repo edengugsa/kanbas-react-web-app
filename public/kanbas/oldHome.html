@@ -1,160 +1,128 @@
 <!-- Home page that includes kanbas navigation and course navigation-->
 <link rel="stylesheet" href="KanbasNavigation/index.css" />
-<link rel="stylesheet" href="index.css" />
 <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 <link href="../vendors/fontawesome/css/all.css" rel="stylesheet"/>
-
-
-<div class="col-1" >
-    <!-- KanbasNavigation -->
-    <ul class="wd-kanbas-navigator list-group">
-        <li>
-            <img width="60px" src="../images/northeastern-logo.jpg">
-        </li>
-        <li>
-            <a href="profile/index.html">
-                <i class="far fa-user-circle fa-3x" style="color: white;"></i>
-            <p> Account</p>
-            </a>
-        </li>
-        <li>
-            <a href="dashboard/index.html">
-                <i class="fas fa-tachometer-alt fa-2x wd-fg-color-red"></i>
-                <p>Dashboard</p>
-            </a>
-        </li>
-        <li>
-            <div class="wd-active-kanbas-nav">
-            <a href="../CourseNavigation/index.html">
-                <i class="fa fa-book fa-2x wd-fg-color-red"></i>
-                <p id="id-active"> Courses </p>
-            </a>
-            </div>
-        </li>
-        <li>
-            <a href="#">
-                <i class="far fa-calendar-alt fa-2x wd-fg-color-red"></i>
-            <p>Calendar</p>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fa fa-envelope-open-text fa-2x wd-fg-color-red"></i>
-            <p>Inbox</p>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="far fa-clock fa-2x wd-fg-color-red"></i>
-            <p>History</p>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fas fa-tv fa-2x wd-fg-color-red"></i>
-            <p>Studio</p>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="far fa-arrow-alt-circle-right fa-2x wd-fg-color-red"></i>
-            <p>Commons</p>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="far fa-question-circle fa-2x wd-fg-color-red"></i>
-            <p>Help</p>
-            </a>
-        </li>
-    </ul>
-</div>
-        <div class="row">
-
-            <div class="top-bar">
-                <i class="fas fa-align-justify wd-fg-color-red">
-                    <span class="wd-fg-color-red">
-                            CS4550 Web Development
-                            <span class="wd-fg-color-black"> > Modules
-                            </span>
-                    </span>
-                </i>
-                <hr>
-            </div>
-
-
-
-            <div class="col-2" style="padding-left: 100px;" >
-                <!-- CourseNavigation -->
-                <ul class ="wd-course-navigation list-group">
-                    <li class="list-group-item active">
-                        <a href="../home.html">Home</a>
+<table width="100%">
+    <tbody>
+        <tr>
+            <td valign="top">
+                <!-- KanbasNavigation -->
+                <ul class="wd-kanbas-navigator list-group">
+                    <li>
+                        <a href="../profile/accountNav.html">
+                            <i class="far fa-user-circle fa-3x" style="color: white;"></i>
+                            Account</a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="#">Modules</a>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-tachometer-alt fa-2x" style="color: #e11809;"></i>
+                            Dashboard</a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="#">Piazza</a>
+                    <li>
+                        <a href="../CourseNavigation/index.html">
+                            <i class="fa fa-book fa-2x" style="color: #e11809;"></i>
+                            Courses</a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="#">Zoom Meetings</a>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-calendar-alt fa-2x" style="color: #e11809;"></i>
+                            Calendar</a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="../assignments/index.html">Assignments</a>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-envelope-open-text fa-2x" style="color: #e11809;"></i>
+                            Inbox</a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="#">Quizzes</a>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-clock fa-2x" style="color: #e11809;"></i>
+                            History</a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="../grades/grades.html">Grades</a>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-tv fa-2x" style="color: #e11809;"></i>
+                            Studio</a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="#">People</a>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-arrow-alt-circle-right fa-2x" style="color: #e11809;"></i>
+                            Commons</a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="#">Panopto Video</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">Discussions</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">Announcements</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">Pages</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">Files</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">Rubrics</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">Outcomes</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">Collaborations</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">Syllabus</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">Settings</a>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-question-circle fa-2x" style="color: #e11809;"></i>
+                            Help</a>
                     </li>
                 </ul>
-            </div>
-
-
-
-            <div class="col">
+            </td>
+            <td valign="top">
+                <!-- CourseNavigation -->
+                <ul class ="list-group" style="border: none;">
+                    <li class="list-group-item" style="border: none;">
+                        <a href="../home.html" style="color: black;">Home</a>
+                    </li>
+                    <li class="list-group-item" style="border: none;">
+                        <a href="#" style="color: #e11809;">Modules</a>
+                    </li>
+                    <li class="list-group-item" style="border: none;">
+                        <a href="#" style="color: #e11809;">Piazza</a>
+                    </li>
+                    <li class="list-group-item" style="border: none;">
+                        <a href="#" style="color: #e11809;">Zoom Meetings</a>
+                    </li>
+                    <li class="list-group-item" style="border: none;">
+                        <a href="../assignments/index.html" style="color: #e11809;">Assignments</a>
+                    </li>
+                    <li class="list-group-item" style="border: none;">
+                        <a href="#" style="color: #e11809;">Quizzes</a>
+                    </li>
+                    <li class="list-group-item" style="border: none;">
+                        <a href="../grades/grades.html" style="color: #e11809;">Grades</a>
+                    </li>
+                    <li class="list-group-item" style="border: none;">
+                        <a href="#" style="color: #e11809;">People</a>
+                    </li>
+                    <li class="list-group-item" style="border: none;">
+                        <a href="#" style="color: #e11809;">Panopto Video</a>
+                    </li>
+                    <li class="list-group-item" style="border: none;">
+                        <a href="#" style="color: #e11809;">Discussions</a>
+                    </li>
+                    <li class="list-group-item" style="border: none;">
+                        <a href="#" style="color: #e11809;">Announcements</a>
+                    </li>
+                    <li class="list-group-item" style="border: none;">
+                        <a href="#" style="color: #e11809;">Pages</a>
+                    </li>
+                    <li class="list-group-item" style="border: none;">
+                        <a href="#" style="color: #e11809;">Files</a>
+                    </li>
+                    <li class="list-group-item" style="border: none;">
+                        <a href="#" style="color: #e11809;">Rubrics</a>
+                    </li>
+                    <li class="list-group-item" style="border: none;">
+                        <a href="#" style="color: #e11809;">Outcomes</a>
+                    </li>
+                    <li class="list-group-item" style="border: none;">
+                        <a href="#" style="color: #e11809;">Collaborations</a>
+                    </li>
+                    <li class="list-group-item" style="border: none;">
+                        <a href="#" style="color: #e11809;">Syllabus</a>
+                    </li>
+                    <li class="list-group-item" style="border: none;">
+                        <a href="#" style="color: #e11809;">Settings</a>
+                    </li>
+                </ul>
+            </td>
+            <td valign="top">
                 <button>Collapse All</button>
                 <button>View Progress</button>
 
                 <select>
                     <option>Publish All</option>
-                    <option>Publish All modules and items</option>
+                    <!-- <option>Publish All modules and items</option>
                     <option>Publish modules only</option>
-                    <option>UnPublish All</option>
+                    <option>UnPublish All</option> -->
                 </select>
 
                 <button>Module</button>
@@ -210,12 +178,8 @@
                     </ul>
                 </ul>
 
-            </div>
-
-
-
-
-            <div class="col-8 col-md-6 col-xl-3">
+            </td>
+            <td valign="top">
                 <h2>Course Status</h2>
 
                 <button>Unpublish</button>
@@ -259,7 +223,7 @@
                         <a href="#">CS4550.12631.202410 Sep 11 at 6pm</a>
                     </li>
                 </ul>
-            </div>
-
-        </div>
-
+            </td>
+        </tr>
+    </tbody>
+</table>

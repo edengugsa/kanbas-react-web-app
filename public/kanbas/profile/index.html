@@ -1,108 +1,141 @@
 <!-- This is the PROFILE table AND all the navigation stuff on the left side -->
 <link rel="stylesheet" href="../KanbasNavigation/index.css" />
+<link rel="stylesheet" href="../index.css" />
 <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
-<!-- FIX THE NAVIGATION -->
-<table width="100%">
-    <tr>
-      <td valign="top">
+
+
+  <div class="col-1">
         <ul class="wd-kanbas-navigator list-group">
           <li>
-              <a href="../profile/accountNav.html">
-                  <i class="far fa-user-circle fa-3x" style="color: white;"></i>
-                  Account</a>
-          </li>
+            <img width="60px" src="../../images/northeastern-logo.jpg">
+        </li>
           <li>
-              <a href="#">
-                  <i class="fas fa-tachometer-alt fa-2x" style="color: #e11809;"></i>
-                  Dashboard</a>
-          </li>
+            <div class="wd-active-kanbas-nav">
+            <a href="profile/index.html">
+                <i class="far fa-user-circle fa-3x" style="color: gray;"></i>
+            <p id="id-active"> Account</p>
+            </a>
+            </div>
+        </li>
+        <li>
+            <a href="dashboard/index.html">
+                <i class="fas fa-tachometer-alt fa-2x wd-fg-color-red"></i>
+                <p>Dashboard</p>
+            </a>
+        </li>
+        <li>
+            <a href="../CourseNavigation/index.html">
+                <i class="fa fa-book fa-2x wd-fg-color-red"></i>
+                <p> Courses </p>
+            </a>
+        </li>
           <li>
-              <a href="../CourseNavigation/index.html">
-                  <i class="fa fa-book fa-2x" style="color: #e11809;"></i>
-                  Courses</a>
-          </li>
-          <li>
-              <a href="#">
-                  <i class="far fa-calendar-alt fa-2x" style="color: #e11809;"></i>
-                  Calendar</a>
-          </li>
-          <li>
-              <a href="#">
-                  <i class="fa fa-envelope-open-text fa-2x" style="color: #e11809;"></i>
-                  Inbox</a>
-          </li>
-          <li>
-              <a href="#">
-                  <i class="far fa-clock fa-2x" style="color: #e11809;"></i>
-                  History</a>
-          </li>
-          <li>
-              <a href="#">
-                  <i class="fas fa-tv fa-2x" style="color: #e11809;"></i>
-                  Studio</a>
-          </li>
-          <li>
-              <a href="#">
-                  <i class="far fa-arrow-alt-circle-right fa-2x" style="color: #e11809;"></i>
-                  Commons</a>
-          </li>
-          <li>
-              <a href="#">
-                  <i class="far fa-question-circle fa-2x" style="color: #e11809;"></i>
-                  Help</a>
-          </li>
+            <a href="#">
+                <i class="far fa-calendar-alt fa-2x wd-fg-color-red"></i>
+            <p>Calendar</p>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-envelope-open-text fa-2x wd-fg-color-red"></i>
+            <p>Inbox</p>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="far fa-clock fa-2x wd-fg-color-red"></i>
+            <p>History</p>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fas fa-tv fa-2x wd-fg-color-red"></i>
+            <p>Studio</p>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="far fa-arrow-alt-circle-right fa-2x wd-fg-color-red"></i>
+            <p>Commons</p>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="far fa-question-circle fa-2x wd-fg-color-red"></i>
+            <p>Help</p>
+            </a>
+        </li>
       </ul>
-      </td>
-      <td valign="top">
-        <ul class ="list-group" style="border: none;">
-          <li class="list-group-item" style="border: none;">
-            <a href="#" style="color: #e11809;">Notifications</a>
+    </div>
+
+    <div class="row">
+
+        <div class="top-bar">
+            <i class="fas fa-align-justify wd-fg-color-red">
+                        <span class="wd-fg-color-black"> Eden Gugsa's Profile</span>
+            </i>
+            <hr>
+        </div>
+
+      <div class="col-2" style="padding-left: 100px;">
+        <ul class ="wd-course-navigation list-group">
+          <li class="list-group-item">
+            <a href="#">Notifications</a>
           </li>
-          <li class="list-group-item" style="border: none;">
-            <a href="./index.html" style="color: #e11809;">Profile</a>
+          <li class="list-group-item active">
+            <a href="./index.html">Profile</a>
           </li>
-          <li class="list-group-item" style="border: none;">
-            <a href="#" style="color: #e11809;">Files</a>
+          <li class="list-group-item">
+            <a href="#">Files</a>
           </li>
-          <li class="list-group-item" style="border: none;">
-            <a href="#" style="color: #e11809;">Settings</a>
+          <li class="list-group-item">
+            <a href="#">Settings</a>
           </li>
-          <li class="list-group-item" style="border: none;">
-            <a href="#" style="color: #e11809;">ePortfolios</a>
+          <li class="list-group-item">
+            <a href="#">ePortfolios</a>
           </li>
-          <li class="list-group-item" style="border: none;">
-            <a href="#" style="color: #e11809;">Shared Content</a>
+          <li class="list-group-item">
+            <a href="#" >Shared Content</a>
           </li>
-          <li class="list-group-item" style="border: none;">
-            <a href="#" style="color: #e11809;">The Hub</a>
+          <li class="list-group-item">
+            <a href="#" >The Hub</a>
           </li>
-          <li class="list-group-item" style="border: none;">
-            <a href="#" style="color: #e11809;">Qwickly Course Tools</a>
+          <li class="list-group-item">
+            <a href="#" >Qwickly Course Tools</a>
           </li>
-          <li class="list-group-item" style="border: none;">
-            <a href="#" style="color: #e11809;">Global Announcements</a>
+          <li class="list-group-item">
+            <a href="#" >Global Announcements</a>
           </li>
         </ul>
-      </td>
-      <td valign="top">
-        <p>Eden Gugsa's Profile</p>
-        <hr>
+      </div>
+
+      <!-- <div class="col-2">
+        <i class="far fa-user-circle fa-10x" style="color:gray;"></i>
+      </div> -->
+
+
+      <div class="col">
+
+        <i class="far fa-user-circle fa-10x" style="color:gray;"></i>
+        
+        <button class="btn btn-light float-end" style="margin-right: 20px;" onclick="window.location.href = 'edit.html'">
+          <i class="fas fa-pencil-alt"></i>Edit Profile</button>
+
+        <br />
         <br />
 
         <h2 style="display: inline-block">Eden Gugsa</h2>
-        <button type="button" style="float: right" onclick="window.location.href = 'edit.html'" >Edit Profile</button>
-
+        
         <h3>Contact</h3>
-        <p style="display: inline-block">No registered services, your can add some on the</p>
-        <a href="#">settings</a>
+        <p style="display: inline-block">No registered services, you can add some on the</p>
+        <a class="wd-fg-color-red" href="#">settings</a>
         <p  style="display: inline-block"> page.</p>
 
         <h3>Biography</h3>
         <p>Student and Colorstack treasurer</p>
 
         <h3>Links</h3>
-        <a href="#">YouTube</a>
-      </td>
-    </tr>
-  </table>
+        <a class="wd-fg-color-red" href="https://www.youtube.com/watch?v=xgY59LQfZSA">YouTube</a>
+      </div>
+</div>

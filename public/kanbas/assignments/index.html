@@ -1,264 +1,481 @@
 <!-- This is the Assignments AND all the navigation stuff on the left side -->
 <link rel="stylesheet" href="../KanbasNavigation/index.css" />
+<link rel="stylesheet" href="../index.css" />
 <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
 
-<table width="100%">
-    <tr>
-      <td valign="top">
-        <ul class="wd-kanbas-navigator list-group">
-          <li>
-              <a href="../profile/accountNav.html">
-                <i class="far fa-user-circle fa-3x" style="color: white;"></i>
-                Account</a>
-          </li>
-          <li>
-              <a href="#">
-                <i class="fas fa-tachometer-alt fa-2x" style="color: #e11809;"></i>
-                Dashboard</a>
-          </li>
-          <li>
-              <a href="../CourseNavigation/index.html">
-                <i class="fa fa-book fa-2x" style="color: #e11809;"></i>
-                Courses</a>
-          </li>
-          <li>
-              <a href="#">
-                <i class="far fa-calendar-alt fa-2x" style="color: #e11809;"></i>
-                Calendar</a>
-          </li>
-          <li>
-              <a href="#">
-                <i class="fa fa-envelope-open-text fa-2x" style="color: #e11809;"></i>
-                Inbox</a>
-          </li>
-          <li>
-              <a href="#">
-                <i class="far fa-clock fa-2x" style="color: #e11809;"></i>
-                History</a>
-          </li>
-          <li>
-              <a href="#">
-                <i class="fas fa-tv fa-2x" style="color: #e11809;"></i>
-                Studio</a>
-          </li>
-          <li>
-              <a href="#">
-                <i class="far fa-arrow-alt-circle-right fa-2x" style="color: #e11809;"></i>
-                Commons</a>
-          </li>
-          <li>
-              <a href="#">
-                <i class="far fa-question-circle fa-2x" style="color: #e11809;"></i>
-                Help</a>
-          </li>
-      </ul>
-      </td>
-      <td valign="top">
-        <ul class ="list-group" style="border: none;">
-          <li class="list-group-item" style="border: none;">
-              <a href="../home.html" style="color: #e11809;">Home</a>
-          </li>
-          <li class="list-group-item" style="border: none;">
-              <a href="#" style="color: #e11809;">Modules</a>
-          </li>
-          <li class="list-group-item" style="border: none;">
-              <a href="#" style="color: #e11809;">Piazza</a>
-          </li>
-          <li class="list-group-item" style="border: none;">
-              <a href="#" style="color: #e11809;">Zoom Meetings</a>
-          </li>
-          <li class="list-group-item" style="border: none;">
-              <a href="../assignments/index.html" style="color: black;">Assignments</a>
-          </li>
-          <li class="list-group-item" style="border: none;">
-              <a href="#" style="color: #e11809;">Quizzes</a>
-          </li>
-          <li class="list-group-item" style="border: none;">
-              <a href="../grades/grades.html" style="color: #e11809;">Grades</a>
-          </li>
-          <li class="list-group-item" style="border: none;">
-              <a href="#" style="color: #e11809;">People</a>
-          </li>
-          <li class="list-group-item" style="border: none;">
-              <a href="#" style="color: #e11809;">Panopto Video</a>
-          </li>
-          <li class="list-group-item" style="border: none;">
-              <a href="#" style="color: #e11809;">Discussions</a>
-          </li>
-          <li class="list-group-item" style="border: none;">
-              <a href="#" style="color: #e11809;">Announcements</a>
-          </li>
-          <li class="list-group-item" style="border: none;">
-              <a href="#" style="color: #e11809;">Pages</a>
-          </li>
-          <li class="list-group-item" style="border: none;">
-              <a href="#" style="color: #e11809;">Files</a>
-          </li>
-          <li class="list-group-item" style="border: none;">
-              <a href="#" style="color: #e11809;">Rubrics</a>
-          </li>
-          <li class="list-group-item" style="border: none;">
-              <a href="#" style="color: #e11809;">Outcomes</a>
-          </li>
-          <li class="list-group-item" style="border: none;">
-              <a href="#" style="color: #e11809;">Collaborations</a>
-          </li>
-          <li class="list-group-item" style="border: none;">
-              <a href="#" style="color: #e11809;">Syllabus</a>
-          </li>
-          <li class="list-group-item" style="border: none;">
-              <a href="#" style="color: #e11809;">Settings</a>
-          </li>
-      </ul>
-  
-      <td valign="top">
-        <input type="text" placeholder="Search for Assignments" />
-<button>Group</button>
-<button>Assignment</button>
-
-<select>
-    <option>Edit Assignment Date</option>
-</select>
-
-<br>
-
-<h3 style="display: inline-block">ASSIGNMENTS 40% of Total</h3>
-<select>
-    <option>Edit</option>
-    <option>Speed Grader</option>
-    <option>Duplicate</option>
-    <option>Delete</option>
-    <option>Move To...</option>
-    <option>Send To...</option>
-    <option>Copy To...</option>
-    <option>Share to Commons</option>
-</select>
-
-<ul>
-    <li><a href="edit.html">A1 - ENV + HTML</a>
-            <br>
-           <a href="#">Multiple Modules</a> 
-        <text> | Not available yet</text>
+<div class="col-1">
+    <ul class="wd-kanbas-navigator list-group">
+      <li>
+        <img width="60px" src="../../images/northeastern-logo.jpg">
     </li>
-    <li><a href="edit.html">A2 - CSS + BOOTSTRAP</a>
-            <br>
-            <a href="#">Multiple Modules</a> 
-            <text> | Not available yet</text>
-    </li>
-    <li><a href="edit.html">A3 - JS + REACT</a>
-            <br>
-            <a href="#">Multiple Modules</a> 
-            <text> | Not available yet</text>
-    </li>
-    <li><a href="edit.html">A4 - STATE + REDUX</a>
-            <br>
-            <a href="#">Multiple Modules</a> 
-            <text> | Not available yet</text>
-    </li>
-    <li><a href="edit.html">A5 - NODE + SESSION</a>
-            <br>
-            <a href="#">Multiple Modules</a> 
-            <text> | Not available yet</text>
-    </li>
-    <li><a href="edit.html">A6 - MONGO + MONGOOSE</a>
-            <br>
-            <a href="#">Multiple Modules</a> 
-            <text> | Not available yet</text>
-    </li>
-</ul>
-
-<br>
-
-<h3 style="display: inline-block">QUIZZES 10% of Total</h3>
-<select>
-    <option>Edit</option>
-    <option>Speed Grader</option>
-    <option>Duplicate</option>
-    <option>Delete</option>
-    <option>Move To...</option>
-    <option>Send To...</option>
-    <option>Copy To...</option>
-    <option>Share to Commons</option>
-</select>
-
-<ul>
-    <li><a href="#">Q1 - HTML</a>
-            <br>
-            <a href="#">Multiple Modules</a> 
-        <text> | Not available yet</text>
-    </li>
-    <li><a href="#">Q2 - CSS</a>
-            <br>
-            <a href="#">Multiple Modules</a> 
-        <text> | Not available yet</text>
-    </li>
-    <li><a href="#">Q3 - JS, ES6</a>
-            <br>
-            <a href="#">Multiple Modules</a> 
-        <text> | Not available yet</text>
-    </li>
-    <li><a href="#">Q4 - NODE</a>
-            <br>
-            <a href="#">Multiple Modules</a> 
-        <text> | Not available yet</text>
-    </li>
-    <li><a href="#">Q5 - MONGO</a>
-            <br>
-            <a href="#">Multiple Modules</a> 
-        <text> | Not available yet</text>
-    </li>
-</ul>
-
-<br>
-
-<h3 style="display: inline-block">EXAMS 20% of Total</h3>
-<select>
-    <option>Edit</option>
-    <option>Speed Grader</option>
-    <option>Duplicate</option>
-    <option>Delete</option>
-    <option>Move To...</option>
-    <option>Send To...</option>
-    <option>Copy To...</option>
-    <option>Share to Commons</option>
-</select>
-
-<ul>
-    <li><a href="#">MIDTERM</a>
-            <br>
-            <a href="#">Multiple Modules</a> 
-        <text> | Not available yet</text>
-    </li>
-    <li><a href="#">FINAL</a>
-            <br>
-            <a href="#">Multiple Modules</a> 
-        <text> | Not available yet</text>
-    </li>
-</ul>
-
-<br>
-
-<h3 style="display: inline-block">PROJECTS 30% of Total</h3>
-<select>
-    <option>Edit</option>
-    <option>Speed Grader</option>
-    <option>Duplicate</option>
-    <option>Delete</option>
-    <option>Move To...</option>
-    <option>Send To...</option>
-    <option>Copy To...</option>
-    <option>Share to Commons</option>
-</select>
-
-<ul>
-    <li><a href="#">PROJECT</a>
-            <br>
-            <a href="#">Multiple Modules</a> 
+      <li>
+        <a href="profile/index.html">
+            <i class="far fa-user-circle fa-3x" style="color: white;"></i>
+        <p> Account</p>
         </a>
-        <text> | Not available yet</text>
     </li>
+    <li>
+        <a href="dashboard/index.html">
+            <i class="fas fa-tachometer-alt fa-2x wd-fg-color-red"></i>
+            <p>Dashboard</p>
+        </a>
+    </li>
+    <li>
+        <div class="wd-active-kanbas-nav">
+        <a href="../CourseNavigation/index.html">
+            <i class="fa fa-book fa-2x wd-fg-color-red"></i>
+            <p> Courses </p>
+        </a>
+    </div>
+    </li>
+      <li>
+        <a href="#">
+            <i class="far fa-calendar-alt fa-2x wd-fg-color-red"></i>
+        <p>Calendar</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa fa-envelope-open-text fa-2x wd-fg-color-red"></i>
+        <p>Inbox</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="far fa-clock fa-2x wd-fg-color-red"></i>
+        <p>History</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fas fa-tv fa-2x wd-fg-color-red"></i>
+        <p>Studio</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="far fa-arrow-alt-circle-right fa-2x wd-fg-color-red"></i>
+        <p>Commons</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="far fa-question-circle fa-2x wd-fg-color-red"></i>
+        <p>Help</p>
+        </a>
+    </li>
+  </ul>
+</div>
+<div class="row">
+
+    <div class="top-bar">
+        <i class="fas fa-align-justify wd-fg-color-red">
+            <span class="wd-fg-color-red">
+                    CS4550 Web Development
+                    <span class="wd-fg-color-black"> > Assignments
+                    </span>
+            </span>
+        </i>
+
+        <button class="btn-light float-end">
+            <i class="fas fa-glasses"></i> Student View</button>  
+        <hr>
+    </div>
+
+
+
+    <div class="col-2" style="padding-left: 100px;" >
+        <!-- CourseNavigation -->
+        <ul class ="wd-course-navigation list-group">
+            <li class="list-group-item">
+                <a href="../home.html">Home</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Modules</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Piazza</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Zoom Meetings</a>
+            </li>
+            <li class="list-group-item active">
+                <a href="../assignments/index.html">Assignments</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Quizzes</a>
+            </li>
+            <li class="list-group-item">
+                <a href="../grades/grades.html">Grades</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">People</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Panopto Video</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Discussions</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Announcements</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Pages</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Files</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Rubrics</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Outcomes</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Collaborations</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Syllabus</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Settings</a>
+            </li>
+        </ul>
+    </div>
+  
+    <div class="col" style="padding-left: 30px;">
+        <input type="text" placeholder="Search for Assignments" />
+
+<button class="btn-light float-end">
+            <i class="fas fa-ellipsis-v"></i></button>   
+            <button class="btn-danger float-end">Assignment</button>     
+<button class="btn-light float-end">+Group</button>
+
+<hr>
+<br>
+
+<div class="assignments-list">
+<ul>
+    <div class="list-header">
+    <li class="list-group-item">
+        <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+        <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+        <i class="fas fa-ellipsis-v float-end pad-5-top" style="padding-right: 15;"></i>
+        <p class="float-end" style="padding-right: 15px; padding-bottom: 10px; font-size: x-large;">+</p>
+
+        <div class="pad-60-right pad-5-top">
+        <span class="badge rounded-pill float-end"><text class="wd-color-black">40% of Total</text></span>
+    </div>
+
+        <i class="fas fa-sort-down inline-start pad-5-top pad-10-left"></i>
+        
+        <h5 class="inline-block pad-50-left" >Assignments </h5>
+        
+    </li>
+</div>
+
+    <li class="list-group-item">
+        <p class="move-right-down assignment-header">A1 SETUP</p>
+
+        <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+        <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+
+        <button class="btn float-end pad-5-top" onclick="window.location.href ='edit.html'">
+            <i class="fas fa-ellipsis-v"></i></button>
+        <i class="fas fa-check-circle float-end wd-color-green pad-5-top"></i>
+        <i class="far fa-edit wd-color-green inline-start pad-10-left pad-5-top"></i>
+
+        <p class="move-right-down">Week 0 - SETUP - Week Starting on Monday September 5th (9/5/2023) Module | </p>
+        <p class="move-right-down"><b>Due </b> Sep 18, 2023 at 11:59pm | 100 pts</p>
+    </li>
+
+    <li class="list-group-item">
+        
+        <p class="move-right-down assignment-header">A2 HTML</p>
+
+        <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+        <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+
+        <button class="btn float-end pad-5-top" onclick="window.location.href ='edit.html'">
+            <i class="fas fa-ellipsis-v"></i></button>
+        <i class="fas fa-check-circle float-end wd-color-green pad-5-top"></i>
+        <i class="far fa-edit wd-color-green inline-start pad-10-left pad-5-top"></i>
+
+        <p class="move-right-down">Week 1 - HTML - Week Starting on Monday September 12th (9/12/2023) Module | </p>
+        <p class="move-right-down"><b>Due </b> Sep 25, 2023 at 11:59pm | 100 pts</p>
+    </li>
+
+    <li class="list-group-item">
+        
+        <p class="move-right-down assignment-header">A3 CSS</p>
+
+        <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+        <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+
+        <button class="btn float-end pad-5-top" onclick="window.location.href ='edit.html'">
+            <i class="fas fa-ellipsis-v"></i></button>
+        <i class="fas fa-check-circle float-end wd-color-green pad-5-top"></i>
+        <i class="far fa-edit wd-color-green inline-start pad-10-left pad-5-top"></i>
+
+        <p class="move-right-down">Week 2 - CSS - Week Starting on Monday September 19th (9/19/2023) Module | </p>
+        <p class="move-right-down"><b>Due </b> Oct 2, 2023 at 11:59pm | 100 pts</p>
+    </li>
+
+    <li class="list-group-item">
+        
+        <p class="move-right-down assignment-header">A4 BOOTSTRAP</p>
+
+        <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+        <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+
+        <button class="btn float-end pad-5-top" onclick="window.location.href ='edit.html'">
+            <i class="fas fa-ellipsis-v"></i></button>
+        <i class="fas fa-check-circle float-end wd-color-green pad-5-top"></i>
+        <i class="far fa-edit wd-color-green inline-start pad-10-left pad-5-top"></i>
+
+        <p class="move-right-down">Week 3 - Bootstrap - Week Starting on Monday September 26th (9/26/2023) Module | </p>
+        <p class="move-right-down"><b>Due </b> Oct 10, 2023 at 11:59pm | 100 pts</p>
+    </li>
+
+    <li class="list-group-item">
+        
+        <p class="move-right-down assignment-header">A5 JAVASCRIPT</p>
+
+        <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+        <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+
+        <button class="btn float-end pad-5-top" onclick="window.location.href ='edit.html'">
+            <i class="fas fa-ellipsis-v"></i></button>
+        <i class="fas fa-check-circle float-end wd-color-green pad-5-top"></i>
+        <i class="far fa-edit wd-color-green inline-start pad-10-left pad-5-top"></i>
+
+        <p class="move-right-down">Week 4 - SETUP - Week Starting on Monday October 3rd (10/3/2023) Module | </p>
+        <p class="move-right-down"><b>Due </b> Oct 16, 2023 at 11:59pm | 100 pts</p>
+    </li>
+
+    <li class="list-group-item">
+        
+        <p class="move-right-down assignment-header">A5 REACT</p>
+
+        <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+        <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+
+        <button class="btn float-end pad-5-top" onclick="window.location.href ='edit.html'">
+            <i class="fas fa-ellipsis-v"></i></button>
+        <i class="fas fa-check-circle float-end wd-color-green pad-5-top"></i>
+        <i class="far fa-edit wd-color-green inline-start pad-10-left pad-5-top"></i>
+
+        <p class="move-right-down">Week 5 - REACT - Week Starting on Monday October 10th (10/10/2023) Module | </p>
+        <p class="move-right-down"><b>Due </b> Oct 23, 2023 at 11:59pm | 100 pts</p>
+    </li>
+
 </ul>
-      </td>
-    </tr>
-  </table>
+
+</div>
+
+
+
+<div class="assignments-list">
+    <ul>
+        <div class="list-header">
+        <li class="list-group-item">
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+            <i class="fas fa-ellipsis-v float-end pad-5-top" style="padding-right: 15;"></i>
+            <p class="float-end" style="padding-right: 15px; padding-bottom: 10px; font-size: x-large;">+</p>
+    
+            <div class="pad-60-right pad-5-top">
+            <span class="badge rounded-pill float-end"><text class="wd-color-black">10% of Total</text></span>
+        </div>
+    
+            <i class="fas fa-sort-down inline-start pad-5-top pad-10-left"></i>
+            
+            <h5 class="inline-block pad-50-left" >Quizzes </h5>
+            
+        </li>
+    </div>
+    
+        <li class="list-group-item">
+            <p class="move-right-down assignment-header">Q1 - HTML</p>
+    
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+    
+            <button class="btn float-end pad-5-top" onclick="window.location.href ='edit.html'">
+                <i class="fas fa-ellipsis-v"></i></button>
+            <i class="fas fa-check-circle float-end wd-color-green pad-5-top"></i>
+            <i class="far fa-edit wd-color-green inline-start pad-10-left pad-5-top"></i>
+    
+            <p class="move-right-down">Week 0 - HTML - Week Starting on Monday September 5th (9/5/2023) Module | </p>
+            <p class="move-right-down"><b>Due </b> Sep 18, 2023 at 11:59pm | 100 pts</p>
+        </li>
+    
+        <li class="list-group-item">
+            
+            <p class="move-right-down assignment-header">Q2 - CSS</p>
+    
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+    
+            <button class="btn float-end pad-5-top" onclick="window.location.href ='edit.html'">
+                <i class="fas fa-ellipsis-v"></i></button>
+            <i class="fas fa-check-circle float-end wd-color-green pad-5-top"></i>
+            <i class="far fa-edit wd-color-green inline-start pad-10-left pad-5-top"></i>
+    
+            <p class="move-right-down">Week 1 - CSS - Week Starting on Monday September 12th (9/12/2023) Module | </p>
+            <p class="move-right-down"><b>Due </b> Sep 25, 2023 at 11:59pm | 100 pts</p>
+        </li>
+    
+        <li class="list-group-item">
+            
+            <p class="move-right-down assignment-header">Q3 - JS</p>
+    
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+    
+            <button class="btn float-end pad-5-top" onclick="window.location.href ='edit.html'">
+                <i class="fas fa-ellipsis-v"></i></button>
+            <i class="fas fa-check-circle float-end wd-color-green pad-5-top"></i>
+            <i class="far fa-edit wd-color-green inline-start pad-10-left pad-5-top"></i>
+    
+            <p class="move-right-down">Week 2 - JS - Week Starting on Monday September 19th (9/19/2023) Module | </p>
+            <p class="move-right-down"><b>Due </b> Oct 2, 2023 at 11:59pm | 100 pts</p>
+        </li>
+    
+        <li class="list-group-item">
+            
+            <p class="move-right-down assignment-header">Q4 - NODE</p>
+    
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+    
+            <button class="btn float-end pad-5-top" onclick="window.location.href ='edit.html'">
+                <i class="fas fa-ellipsis-v"></i></button>
+            <i class="fas fa-check-circle float-end wd-color-green pad-5-top"></i>
+            <i class="far fa-edit wd-color-green inline-start pad-10-left pad-5-top"></i>
+    
+            <p class="move-right-down">Week 3 - NODE - Week Starting on Monday September 26th (9/26/2023) Module | </p>
+            <p class="move-right-down"><b>Due </b> Oct 10, 2023 at 11:59pm | 100 pts</p>
+        </li>
+    
+        <li class="list-group-item">
+            
+            <p class="move-right-down assignment-header">Q5 - MONGO</p>
+    
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+    
+            <button class="btn float-end pad-5-top" onclick="window.location.href ='edit.html'">
+                <i class="fas fa-ellipsis-v"></i></button>
+            <i class="fas fa-check-circle float-end wd-color-green pad-5-top"></i>
+            <i class="far fa-edit wd-color-green inline-start pad-10-left pad-5-top"></i>
+    
+            <p class="move-right-down">Week 4 - Mongo - Week Starting on Monday October 3rd (10/3/2023) Module | </p>
+            <p class="move-right-down"><b>Due </b> Oct 16, 2023 at 11:59pm | 100 pts</p>
+        </li>
+    
+    </ul>
+    
+    </div>
+
+<br>
+
+<br>
+
+<div class="assignments-list">
+    <ul>
+        <div class="list-header">
+        <li class="list-group-item">
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+            <i class="fas fa-ellipsis-v float-end pad-5-top" style="padding-right: 15;"></i>
+            <p class="float-end" style="padding-right: 15px; padding-bottom: 10px; font-size: x-large;">+</p>
+    
+            <div class="pad-60-right pad-5-top">
+            <span class="badge rounded-pill float-end"><text class="wd-color-black">20% of Total</text></span>
+        </div>
+    
+            <i class="fas fa-sort-down inline-start pad-5-top pad-10-left"></i>
+            
+            <h5 class="inline-block pad-50-left" >Exams </h5>
+            
+        </li>
+    </div>
+    
+        <li class="list-group-item">
+            <p class="move-right-down assignment-header">Midterm</p>
+    
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+    
+            <button class="btn float-end pad-5-top" onclick="window.location.href ='edit.html'">
+                <i class="fas fa-ellipsis-v"></i></button>
+            <i class="fas fa-check-circle float-end wd-color-green pad-5-top"></i>
+            <i class="far fa-edit wd-color-green inline-start pad-10-left pad-5-top"></i>
+    
+            <p class="move-right-down">Week 0 - HTML - Week Starting on Monday September 5th (9/5/2023) Module | </p>
+            <p class="move-right-down"><b>Due </b> Sep 18, 2023 at 11:59pm | 100 pts</p>
+        </li>
+
+        <li class="list-group-item">
+            <p class="move-right-down assignment-header">Final</p>
+    
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+    
+            <button class="btn float-end pad-5-top" onclick="window.location.href ='edit.html'">
+                <i class="fas fa-ellipsis-v"></i></button>
+            <i class="fas fa-check-circle float-end wd-color-green pad-5-top"></i>
+            <i class="far fa-edit wd-color-green inline-start pad-10-left pad-5-top"></i>
+    
+            <p class="move-right-down">Week 0 - HTML - Week Starting on Monday September 5th (9/5/2023) Module | </p>
+            <p class="move-right-down"><b>Due </b> Sep 18, 2023 at 11:59pm | 100 pts</p>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<div class="assignments-list">
+    <ul>
+        <div class="list-header">
+        <li class="list-group-item">
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+            <i class="fas fa-ellipsis-v float-end pad-5-top" style="padding-right: 15;"></i>
+            <p class="float-end" style="padding-right: 15px; padding-bottom: 10px; font-size: x-large;">+</p>
+    
+            <div class="pad-60-right pad-5-top">
+            <span class="badge rounded-pill float-end"><text class="wd-color-black">30% of Total</text></span>
+        </div>
+    
+            <i class="fas fa-sort-down inline-start pad-5-top pad-10-left"></i>
+            
+            <h5 class="inline-block pad-50-left" >Projects </h5>
+            
+        </li>
+    </div>
+    
+        <li class="list-group-item">
+            <p class="move-right-down assignment-header">Project</p>
+    
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+            <i class="fas fa-ellipsis-v inline-start pad-5-top"></i>
+    
+            <button class="btn float-end pad-5-top" onclick="window.location.href ='edit.html'">
+                <i class="fas fa-ellipsis-v"></i></button>
+            <i class="fas fa-check-circle float-end wd-color-green pad-5-top"></i>
+            <i class="far fa-edit wd-color-green inline-start pad-10-left pad-5-top"></i>
+    
+            <p class="move-right-down">Week 0 - HTML - Week Starting on Monday September 5th (9/5/2023) Module | </p>
+            <p class="move-right-down"><b>Due </b> Sep 18, 2023 at 11:59pm | 100 pts</p>
+        </li>
+
+    </ul>
+
+</div>
+
+</div>

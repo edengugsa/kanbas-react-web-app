@@ -9,25 +9,86 @@
   
   .wd-kanbas-navigator {
     background-color: black;
-    color: white;
-    padding: 0px;
+    /* color: white; */
     width: 80px;
     font-size: 0.8em;
+    height: 100vh;
+    position: fixed;
+    float: left;
+    /* border-radius: 50px; */
+    border-radius: none;
   }
   
-  .wd-kanbas-navigator li {
-    list-style-type: none;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .wd-kanbas-navigator li a {
-    color: white;
-    text-decoration: none;
+  .wd-active-kanbas-nav {
+    background-color: white;
+    padding: 5px;
+    border-radius: none;
   }
 
-  .wd-no-boarder li a {
-     border: none;
-
+  .wd-active-kanbas-nav p{
+    color: black;
   }
   
+.wd-kanbas-navigator li {
+  list-style-type: none;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: none;
+}
+  
+.wd-kanbas-navigator li a {
+  color: white;
+  text-decoration: none;
+}
+
+.wd-no-boarder li a {
+  border: none;
+
+}
+  
+.wd-fg-color-red {
+    color: red;
+}
+
+.wd-fg-color-black {
+  color: black;
+}
+
+.wd-color-light-blue {
+  color: lightskyblue;
+}
+
+.wd-color-sky-blue {
+  color: rgb(67, 154, 184);
+}
+
+.wd-color-med-blue {
+  color: rgb(139, 199, 231);
+}
+
+.wd-fg-color-gray {
+  color: gray;
+}
+
+.wd-color-green {
+  color: green;
+}
+
+.wd-color-black {
+  color: black;
+}
+
+.badge{
+  border: 1px black solid;
+  display: inline-flex;
+  /* color: black;
+  color: #000000; */
+  /* color:lightgray */
+}
+
+.container 
+{ position: relative; }
+.container img 
+{ display: block; }
+.container .fa-ellipsis-v 
+{ position: absolute; top:0; right:0; }
