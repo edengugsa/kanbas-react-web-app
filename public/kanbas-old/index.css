@@ -1,0 +1,146 @@
+/* .wd-active-kanbas-nav{
+    background-color: white;
+    padding: 5px;
+    color: red;
+}
+
+.wd-non-active-kanbas-nav{
+    background-color: black;
+    padding: 5px;
+    color: white;
+}
+
+p#id-active {
+    background-color: white;
+    padding: 5px;
+    color: red;
+} */
+
+.top-bar {
+    margin-top: 100px;
+    padding-left: 100px;
+    padding-top: 20px;
+    /* float: right; */
+    color: black;
+    float: top;
+}
+
+.top-bar i{
+    /* margin-top: 20px; */
+    padding-left: 100px;
+}
+
+.float-end {
+    float: end;
+}
+
+.btn-right button{
+    height: 20px;
+}
+
+.wd-course-navigation {
+    border-radius: none;
+    margin-left: 10px;
+    float: left;
+    padding-left: 100px;
+    
+}
+
+.wd-course-navigation .list-group-item {
+    border: none;
+    border-radius: none;
+    
+}
+  
+.wd-course-navigation .list-group-item.active {
+    color: black;
+    background-color: white;
+    border: none;
+    border-left: 2px solid black;
+    border-radius: none;
+}
+
+.wd-course-navigation a {
+    color: red;
+    text-decoration: none;
+    border-radius: none;
+}
+  
+.wd-course-navigation .list-group-item.active a {
+    color: black;
+    border-radius: none;
+}
+
+.assignments-list {
+    border-radius: none;
+    margin-left: 10px;
+    float: left;
+    /* padding-left: 70px; */
+    width: 94%;
+    
+    
+}
+
+.assignments-list .list-group-item {
+    /* border: none; */
+    border-radius: none;
+    border-left: 3px solid green;
+    
+}
+
+.assignments-list .list-header .list-group-item{
+    /* border: none; */
+    background-color: lightgray;
+    border-radius: none;
+    border-left: none;
+    
+}
+
+.move-right-down {
+    padding-left: 60px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    
+}
+
+.inline-start{
+    float: inline-start;
+}
+
+.inline-block{
+    float: inline-block;
+}
+
+.pad-5-top{
+    padding-top: 5px;
+}
+
+.pad-10-left{
+    padding-left: 15px;
+}
+
+.pad-60-right{
+    padding-right: 60px;
+}
+
+.pad-50-left{
+    padding-left: 50px;
+}
+
+.assignment-header{
+    font-size: large; 
+    font-weight: 700;
+}
+
+
+/* .margin-down-sml {
+    margin-bottom: 0px;
+    margin-top: 0px;
+} */
+
+
+
+/* .wd-fg-color-red {
+    color: #ff7070;
+} */
+

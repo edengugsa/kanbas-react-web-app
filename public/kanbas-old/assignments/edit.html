@@ -1,0 +1,268 @@
+<!-- This is the Assignment editor AND all the navigation stuff on the left side -->
+<link rel="stylesheet" href="../KanbasNavigation/index.css" />
+<link rel="stylesheet" href="../index.css" />
+<link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+
+<div class="col-1">
+    <ul class="wd-kanbas-navigator list-group">
+      <li>
+        <img width="60px" src="../../images/northeastern-logo.jpg">
+    </li>
+      <li>
+        <a href="profile/index.html">
+            <i class="far fa-user-circle fa-3x" style="color: white;"></i>
+        <p> Account</p>
+        </a>
+    </li>
+    <li>
+        <a href="dashboard/index.html">
+            <i class="fas fa-tachometer-alt fa-2x wd-fg-color-red"></i>
+            <p>Dashboard</p>
+        </a>
+    </li>
+    <li>
+        <div class="wd-active-kanbas-nav">
+        <a href="../CourseNavigation/index.html">
+            <i class="fa fa-book fa-2x wd-fg-color-red"></i>
+            <p> Courses </p>
+        </a>
+    </div>
+    </li>
+      <li>
+        <a href="#">
+            <i class="far fa-calendar-alt fa-2x wd-fg-color-red"></i>
+        <p>Calendar</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa fa-envelope-open-text fa-2x wd-fg-color-red"></i>
+        <p>Inbox</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="far fa-clock fa-2x wd-fg-color-red"></i>
+        <p>History</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fas fa-tv fa-2x wd-fg-color-red"></i>
+        <p>Studio</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="far fa-arrow-alt-circle-right fa-2x wd-fg-color-red"></i>
+        <p>Commons</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="far fa-question-circle fa-2x wd-fg-color-red"></i>
+        <p>Help</p>
+        </a>
+    </li>
+  </ul>
+</div>
+<div class="row">
+
+    <div class="top-bar">
+        <i class="fas fa-align-justify wd-fg-color-red">
+            <span class="wd-fg-color-red">
+                    CS4550 Web Development
+                    <span class="wd-color-black"> >
+                        <span class="wd-fg-color-red">  Assignments
+                        </span>> A1 ENV +...
+                    </span>
+            </span>
+        </i>
+        <hr>
+    </div>
+
+
+
+    <div class="col-2" style="padding-left: 100px;" >
+        <!-- CourseNavigation -->
+        <ul class ="wd-course-navigation list-group">
+            <li class="list-group-item">
+                <a href="../home.html">Home</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Modules</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Piazza</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Zoom Meetings</a>
+            </li>
+            <li class="list-group-item active">
+                <a href="../assignments/index.html">Assignments</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Quizzes</a>
+            </li>
+            <li class="list-group-item">
+                <a href="../grades/grades.html">Grades</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">People</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Panopto Video</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Discussions</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Announcements</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Pages</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Files</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Rubrics</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Outcomes</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Collaborations</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Syllabus</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Settings</a>
+            </li>
+        </ul>
+    </div>
+  
+    <div class="col" style="padding-left: 30px;">
+       
+
+<button class="btn-light float-end">
+            <i class="fas fa-ellipsis-v"></i></button>   
+            
+
+<span class="badge rounded-pill float-end " style="border: none; font-size: large; font-weight: 400;"><text class="wd-color-green">Published</text></span>
+
+<i class="fas fa-check-circle float-end wd-color-green pad-5-top"></i>
+
+<br>
+<hr>
+
+
+    <h3>Assignment Name</h3>
+    <form action="/Kanbas/Courses/Home">
+        <input class="form-control" value="A1 - ENV + HTML" />
+    
+        <br />
+        <textarea class="form-control" cols="50" rows="10">
+        This is the description of the assignment
+    </textarea>
+        <br />
+        <br />
+        <label for="points">Points</label>
+        <br />
+        <input class="form-control" id="points" max="100" min="50" step="5" type="number" value="100" />
+        <br />
+        <br />
+        Assignment Group
+        <br />
+        <select class="form-control">
+            <option>ASSIGNMENTS</option>
+        </select>
+    
+        <br />
+        <br />
+        Display Grade as
+        <br />
+        <select class="form-control">
+            <option>Percentage</option>
+        </select>
+    
+        <br />
+        <br />
+        Submission Type
+        <br />
+        <select class="form-control">
+            <option>Online</option>
+        </select>
+        <br />
+        <br />
+    
+    
+        Online Entry Options
+        <br />
+        <input class="form-control" id="text-entry" type="checkbox" />
+        <label class="form-control" for="text-entry">Text Entry</label>
+        <br />
+        <label> <input type="checkbox" /> Website URL </label>
+        <br />
+        <input class="form-control" type="checkbox" /> Media Recording<br />
+        <input class="form-control" type="checkbox" /> Student Annotation<br />
+        <input class="form-control" type="checkbox" /> File Uploads
+    
+        <br />
+        <br />
+        Submission Attempts
+        <br />
+        <select class="form-control">
+            <option>Unlimited</option>
+        </select>
+    
+        <br />
+        <br />
+        Plagiarism Review
+        <br />
+        <select class="form-control">
+            <option>None</option>
+        </select>
+        <br />
+        <br />
+    
+        Group Assignment
+        <br />
+        <input class="form-control" type="checkbox" /> This is a group assignment
+        <br />
+        <br />
+    
+        Peer Reviews
+        <br />
+        <input class="form-control" type="checkbox" /> Require Peer Reviews
+        <br />
+        <br />
+    
+        Assign to
+        <br />
+        <input class="form-control" value="Everyone"/>
+        <br />
+        <br />
+    
+        Due
+        <br />
+        <input class="form-control" type="date" value="2023-09-21" min="2023-09-07" max="2023-09-28" />    <br />
+        <br />
+    
+        Available from 
+        <br />
+        <input class="form-control" type="date" value="2023-09-21" min="2023-09-07" max="2023-09-28" />    <br />
+        <br />
+    
+        Until
+        <br />
+        <input class="form-control" type="date" value="2023-09-21" min="2023-09-07" max="2023-09-28" />    <br />
+        <br />
+    
+        <button type="button"; onclick="window.location.href ='index.html'">Cancel</button>
+        <button type="button"; onclick="window.location.href ='index.html'">Save</button>
+    
+    </form>
+    </div>
