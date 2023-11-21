@@ -16,10 +16,14 @@ function Kanbas() {
   const findAllCourses = async () => {
     const response = await axios.get(URL);
     setCourses(response.data);
+    console.log("in fetch " + response.data);
   };
   useEffect(() => {
     findAllCourses();
+    console.log("in dash " + courses);
   }, []);
+
+
 
   const [course, setCourse] = useState({
     name: "New Course",      number: "New Number",
