@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 function Dashboard({ courses, course, setCourse, addNewCourse,
   deleteCourse, updateCourse }) 
   {
+
   
   // const [courses, setCourses] = useState(db.courses);
   // const [course, setCourse] = useState({
@@ -83,13 +84,13 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
    
 </div>
 </div>
-
-
-
       
       <div className="list-group"  style={ { paddingLeft: 180 }}>
+      {/* {courses.map((course) => (
+        console.log("line 90" + course)
+      ))} */}
         {courses.map((course) => (
-          <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="list-group-item card">
+          <Link key={course} to={`/Kanbas/Courses/${course}`} className="list-group-item card">
              <button
               onClick={(event) => {
                 event.preventDefault();
