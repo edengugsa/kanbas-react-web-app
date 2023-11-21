@@ -7,6 +7,7 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Courses() {
   const { courseId } = useParams();
