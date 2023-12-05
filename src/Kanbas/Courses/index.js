@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Courses() {
   const { courseId } = useParams();
-  const URL = "https://kanbas-node-server-app-fhb2.onrender.com/api/courses";
+  const URL = "http://localhost:4000/api/courses";
   const [course, setCourse] = useState({});
   const findCourseById = async (courseId) => {
     const response = await axios.get(
@@ -25,7 +25,7 @@ function Courses() {
   }, [courseId]);
 
     return (
-    <div>
+    <div style={{ paddingLeft: '200px' }}>
       <h1>Course {course.name}</h1>
       <CourseNavigation />
       <div>

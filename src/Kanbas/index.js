@@ -1,10 +1,14 @@
 // import Nav from "../Nav";
+import Signin from "../Kanbas/users/signin";
+import Signup from "../Kanbas/users/signup";
+import Account from "../Kanbas/users/Account";
 import KanbasNavigation from "./KanbasNavigation";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import db from "./Database";
+import UserTable from "../Kanbas/users/table";
+// import db from "./Database";
 import React, { useState, useEffect } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
@@ -12,7 +16,9 @@ import axios from "axios";
 
 function Kanbas() {
   const [courses, setCourses] = useState([]);
-  const URL = "https://kanbas-node-server-app-fhb2.onrender.com/api/courses";
+  // const URL = "https://kanbas-node-server-app-fhb2.onrender.com/api/courses";
+  const URL = "http://localhost:4000/api/courses";
+
   const findAllCourses = async () => {
     const response = await axios.get(URL);
     setCourses(response.data);
@@ -69,10 +75,13 @@ function Kanbas() {
        <div>
        <KanbasNavigation />
        </div>
-       <div>
+       <div >
        <Routes>
           <Route path="/" element={<Navigate to="Dashboard" />} />
-          <Route path="Account" element={<h1>Account</h1>} />
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/Account" element={<Account />} />
+          <Route path="/Account/:id" element={<Account />} />
           <Route path="Dashboard" element={<Dashboard
               courses={courses}
               course={course}
@@ -83,6 +92,7 @@ function Kanbas() {
           } />
           <Route path="Courses/:courseId/*" element={
             <Courses courses={courses} />} />
+            <Route path="/admin/users" element={<UserTable />} />
 
         </Routes>
        </div>

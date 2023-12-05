@@ -6,54 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Dashboard({ courses, course, setCourse, addNewCourse,
   deleteCourse, updateCourse }) 
   {
-  
-  // const [courses, setCourses] = useState(db.courses);
-  // const [course, setCourse] = useState({
-  //   name: "New Course",      number: "New Number",
-  //   startDate: "2023-09-10", endDate: "2023-12-15",
-  // });
-
-  // const updateCourse = () => {
-  //   setCourses(
-  //     courses.map((c) => {
-  //       if (c._id === course._id) {
-  //         return course;
-  //       } else {
-  //         return c;
-  //       }
-  //     })
-  //   );
-  // };
-
-  // const addNewCourse = () => {
-  //   setCourses([...courses,
-  //             { ...course,
-  //               _id: new Date().getTime() }]);
-  // };
-
-  // const deleteCourse = (courseId) => {
-  //   setCourses(courses.filter((course) => course._id !== courseId));
-  // };
-
-
-  // const courses = db.courses;
   return (
-  //   <div>
-  //   <h1>Dashboard</h1>
-  //   <div className="list-group">
-  //     {courses.map((course) => (
-  //       <Link key={course._id}>
-  //             to={`/Kanbas/Courses/${course._id}`}
-  //             className="list-group-item">
-  //         {course.name}
-  //       </Link>
-  //     ))}
-  //   </div>
-  // </div>
-
-
-    <div >
-
+    <div style={{ paddingLeft: '200px' }}>
 
 <div class="row">
 
