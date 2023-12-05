@@ -8,10 +8,12 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import 'bootstrap/dist/css/bootstrap.min.css';
+export const BASE_API = process.env.REACT_APP_BASE_API_URL;
 
 function Courses() {
   const { courseId } = useParams();
-  const URL = "http://localhost:4000/api/courses";
+  // const URL = "http://localhost:4000/api/courses";
+  const URL = `${BASE_API}/api/courses`;
   const [course, setCourse] = useState({});
   const findCourseById = async (courseId) => {
     const response = await axios.get(

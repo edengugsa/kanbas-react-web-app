@@ -1,10 +1,13 @@
 import axios from "axios";
 // const COURSES_URL = "http://localhost:4000/api/courses";
-const COURSES_URL = "http://localhost:4000/api/courses";
+// const COURSES_URL = "http://localhost:4000/api/courses";
 // const MODULES_URL = "https://kanbas-node-server-app-fhb2.onrender.com/api/courses";
-const API_BASE = process.env.REACT_APP_API_BASE;
+// export const BASE_API = process.env.REACT_APP_BASE_API_URL;
 // const MODULES_URL = `${API_BASE}/modules`;
-const MODULES_URL = "http://localhost:4000/api/modules";
+// const MODULES_URL = "http://localhost:4000/api/modules";
+export const BASE_API = process.env.REACT_APP_BASE_API_URL;
+const COURSES_URL = `${BASE_API}/api/courses`;
+const MODULES_URL = `${BASE_API}/api/modules`;
 
 
 export const updateModule = async (module) => {

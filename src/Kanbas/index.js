@@ -13,11 +13,13 @@ import React, { useState, useEffect } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
+export const BASE_API = process.env.REACT_APP_BASE_API_URL;
 
 function Kanbas() {
   const [courses, setCourses] = useState([]);
   // const URL = "https://kanbas-node-server-app-fhb2.onrender.com/api/courses";
-  const URL = "http://localhost:4000/api/courses";
+  // const URL = "http://localhost:4000/api/courses";
+  const URL = `${BASE_API}/api/courses`;
 
   const findAllCourses = async () => {
     const response = await axios.get(URL);
