@@ -5,6 +5,7 @@ import { RiDashboard3Line } from "react-icons/ri";
 import { MdOutlineAccountCircle } from "react-icons/md";
 import { FaBook } from "react-icons/fa";
 import { BsCalendar2Week } from "react-icons/bs";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function KanbasNavigation() {
   const links = ["Account", "Dashboard", "Courses", "Calendar"];

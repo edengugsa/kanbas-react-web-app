@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function Assignments() {

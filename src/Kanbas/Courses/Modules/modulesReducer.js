@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 // import db from "../../Database";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const initialState = {

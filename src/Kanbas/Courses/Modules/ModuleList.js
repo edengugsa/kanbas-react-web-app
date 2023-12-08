@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import {
   addModule,
   deleteModule,
@@ -46,11 +48,11 @@ function ModuleList() {
   return (
     <ul className="list-group">
       <li className="list-group-item">
-        <button
+        <button className="btn btn-primary w-30"
           onClick={handleAddModule}>
           Add
         </button>
-        <button
+        <button className="btn btn-primary w-30"
           onClick={handleUpdateModule}>
           Update
         </button>
@@ -69,11 +71,11 @@ function ModuleList() {
         .filter((module) => module.course === courseId)
         .map((module, index) => (
           <li key={index} className="list-group-item">
-            <button
+            <button className="btn btn-primary w-30"
               onClick={() => dispatch(setModule(module))}>
               Edit
             </button>
-            <button
+            <button className="btn btn-danger w-30"
               onClick={() => handleDeleteModule(module._id)}>
               Delete
             </button>

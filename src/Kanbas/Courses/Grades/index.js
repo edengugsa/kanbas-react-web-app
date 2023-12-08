@@ -1,5 +1,7 @@
 import db from "../../Database";
 import { useParams } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function Grades() {
   const { courseId } = useParams();
   const assignments = db.assignments.filter((assignment) => assignment.course === courseId);

@@ -52,13 +52,12 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
   // </div>
 
 
-    <div >
+  <div style={{ paddingLeft: '200px' }}>
 
-
-<div class="row">
-
-<div class="top-bar">
-<h1>Dashboard</h1>
+  <div class="row">
+  
+  <div class="top-bar">
+  <h1>Dashboard</h1>
 <h5>Course</h5>
 <div style={ { marginLeft: 180 }}>
 <input value={course.name} className="form-control"
@@ -71,10 +70,10 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
              onChange={(e) => setCourse({ ...course, endDate: e.target.value }) } />
 
       </div>
-<button style={ { marginLeft: 180 }} onClick={addNewCourse} >
+<button  className="btn btn-primary w-30" style={ { marginLeft: 180 }} onClick={addNewCourse} >
         Add
       </button>
-      <button onClick={updateCourse} >
+      <button className="btn btn-primary w-30" onClick={updateCourse} >
         Update
       </button>
       …
@@ -88,7 +87,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
       <div className="list-group"  style={ { paddingLeft: 180 }}>
         {courses.map((course) => (
           <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="list-group-item card">
-             <button
+             <button className="btn btn-primary w-30"
               onClick={(event) => {
                 event.preventDefault();
                 setCourse(course);
@@ -96,7 +95,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
               Edit
             </button>
 
-            <button
+            <button className="btn btn-danger w-30"
               onClick={(event) => {
                 event.preventDefault();
                 deleteCourse(course._id);

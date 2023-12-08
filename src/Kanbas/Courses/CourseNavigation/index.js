@@ -1,6 +1,7 @@
 import { Link, useParams, useLocation } from "react-router-dom";
 import '../../KanbasNavigation/index.css'
 import '../../index.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function CourseNavigation() {
   const links = ["Home", "Modules", "Assignments", "Grades"];

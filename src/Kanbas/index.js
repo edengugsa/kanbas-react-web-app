@@ -40,28 +40,46 @@ function Kanbas() {
 
   const deleteCourse = async (course) => {
     const response = await axios.delete(
-      `${URL}/${course._id}`
+      `${URL}/${course}`
     );
     setCourses(courses.filter(
-      (c) => c._id !== course._id));
+      (c) => c._id !== course));
   };
 
-
-  const updateCourse = async (course) => {
+  const updateCourse = async () => {
+    console.log('plss')
+    console.log(course._id)
     const response = await axios.put(
-      `${URL}/${course._id}`,
-      course
+    `${URL}/${course._id}`,
+    course
     );
     setCourses(
       courses.map((c) => {
         if (c._id === course._id) {
-          return course;
+          return response.data;
         }
         return c;
       })
-    );
-    setCourse({ name: "" });
-  };
+      );
+    };
+
+  // const updateCourse = async (course) => {
+  //   console.log('plss')
+  //   console.log(course._id)
+  //   const response = await axios.put(
+  //     `${URL}/${course._id}`,
+  //     course
+  //   );
+  //   setCourses(
+  //     courses.map((c) => {
+  //       if (c._id === course._id) {
+  //         return course;
+  //       }
+  //       return c;
+  //     })
+  //   );
+  //   setCourse({ name: "" });
+  // };
 
    return (
     <Provider store={store}>
